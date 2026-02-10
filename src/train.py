@@ -6,8 +6,6 @@ from model import MultimodalSentimentModel
 from torchvision import transforms
 from transformers import BertTokenizer
 
-# Load your CSV and split
-# Example code:
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -34,7 +32,6 @@ model = MultimodalSentimentModel().to(device)
 optimizer = AdamW(model.parameters(), lr=2e-5)
 criterion = torch.nn.CrossEntropyLoss()
 
-# Training loop (1 epoch example)
 for batch in train_loader:
     optimizer.zero_grad()
     input_ids = batch['input_ids'].to(device)
