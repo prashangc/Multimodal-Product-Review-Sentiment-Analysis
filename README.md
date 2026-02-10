@@ -109,8 +109,6 @@ project-root/
 │   ├── word_count_by_sentiment.png
 │   └── correlation_heatmap.png
 │
-├── models/                     # Saved models
-│
 ├── README.md
 └── requirements.txt
 ```
